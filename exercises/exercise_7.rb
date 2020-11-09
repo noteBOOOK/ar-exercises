@@ -10,3 +10,9 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+store_name = "Po"
+
+mega_store = Store.create(name: store_name)
+
+mega_store.valid?
+puts mega_store.errors.full_messages
